@@ -39,12 +39,15 @@ function App() {
   const loadWeb3 = async () => {
     if (window.ethereum) {
       try {
+
         const _web3 = new Web3(window.ethereum);
+        console.log("_web3",_web3)
         const accounts = await window.ethereum.request({
           method: "eth_requestAccounts",
         });
         setWeb3(_web3);
       } catch (error) {
+        console.log("errorrr")
         console.error(error);
       }
     } else {
@@ -53,6 +56,7 @@ function App() {
   };
 
   const loadBlockchainData = async () => {
+    console.log("LOAD")
     if (web3) {
       const [investor] = await web3.eth.getAccounts();
       setInvestor(investor);
@@ -66,6 +70,7 @@ function App() {
       setTokenBalance(_tokenBalance / Math.pow(10, USDC_DECIMALS));
       const networkId = await web3.eth.net.getId();
       const dexData = Dex.networks[networkId];
+      console.log("dexData",dexData)
       if (dexData) {
         const _dexContract = new web3.eth.Contract(Dex.abi, dexData.address);
         setDexContract(_dexContract);
@@ -82,7 +87,8 @@ function App() {
         .send({
           value: web3.utils.toWei(ethAmount, "ether"),
           from: investor,
-        });
+        })
+        .catch(e =>console.log(e));
 
       const balance = await web3.eth.getBalance(investor);
       const _tokenBalance = await tokenContract.methods
