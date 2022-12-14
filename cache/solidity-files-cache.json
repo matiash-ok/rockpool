@@ -1,0 +1,513 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "C:\\Users\\Maty_\\Desktop\\proyectos\\uniswapRockRugPool\\uniswapDexUSDCETH\\node_modules\\hardhat\\console.sol": {
+      "lastModificationDate": 1670375032372,
+      "contentHash": "4ff3cd2f6272c9a6516e9ee4f2b967d3",
+      "sourceName": "hardhat/console.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">= 0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "console"
+      ]
+    },
+    "C:\\Users\\Maty_\\Desktop\\proyectos\\uniswapRockRugPool\\uniswapDexUSDCETH\\node_modules\\@openzeppelin\\contracts\\token\\ERC20\\IERC20.sol": {
+      "lastModificationDate": 1670434504356,
+      "contentHash": "ad7c2d0af148c8f9f097d65deeb4da6b",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "C:\\Users\\Maty_\\Desktop\\proyectos\\uniswapRockRugPool\\uniswapDexUSDCETH\\node_modules\\@uniswap\\v2-core\\contracts\\interfaces\\IUniswapV2Pair.sol": {
+      "lastModificationDate": 1671021016569,
+      "contentHash": "ef7f229c22a4598f6a17228621cd8cb3",
+      "sourceName": "@uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IUniswapV2Pair"
+      ]
+    },
+    "C:\\Users\\Maty_\\Desktop\\proyectos\\uniswapRockRugPool\\uniswapDexUSDCETH\\node_modules\\@uniswap\\v2-core\\contracts\\interfaces\\IUniswapV2Factory.sol": {
+      "lastModificationDate": 1670434591985,
+      "contentHash": "ec39b5372f4f4d52101b4da561e2aee6",
+      "sourceName": "@uniswap/v2-core/contracts/interfaces/IUniswapV2Factory.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IUniswapV2Factory"
+      ]
+    },
+    "C:\\Users\\Maty_\\Desktop\\proyectos\\uniswapRockRugPool\\uniswapDexUSDCETH\\node_modules\\@uniswap\\v2-core\\contracts\\UniswapV2Pair.sol": {
+      "lastModificationDate": 1671025425850,
+      "contentHash": "3c048f6018376ee2e5a6af9b39cd96de",
+      "sourceName": "@uniswap/v2-core/contracts/UniswapV2Pair.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IUniswapV2Pair.sol",
+        "./UniswapV2ERC20.sol",
+        "./libraries/Math.sol",
+        "./libraries/UQ112x112.sol",
+        "./interfaces/IERC20.sol",
+        "./interfaces/IUniswapV2Factory.sol",
+        "./interfaces/IUniswapV2Callee.sol",
+        "hardhat/console.sol"
+      ],
+      "versionPragmas": [
+        "=0.5.16"
+      ],
+      "artifacts": [
+        "UniswapV2Pair"
+      ]
+    },
+    "C:\\Users\\Maty_\\Desktop\\proyectos\\uniswapRockRugPool\\uniswapDexUSDCETH\\node_modules\\@uniswap\\v2-core\\contracts\\UniswapV2Factory.sol": {
+      "lastModificationDate": 1671022728254,
+      "contentHash": "a991a314c50f9655ad635aae1897625d",
+      "sourceName": "@uniswap/v2-core/contracts/UniswapV2Factory.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IUniswapV2Factory.sol",
+        "./UniswapV2Pair.sol"
+      ],
+      "versionPragmas": [
+        "=0.5.16"
+      ],
+      "artifacts": [
+        "UniswapV2Factory"
+      ]
+    },
+    "C:\\Users\\Maty_\\Desktop\\proyectos\\uniswapRockRugPool\\uniswapDexUSDCETH\\node_modules\\@uniswap\\v2-core\\contracts\\UniswapV2ERC20.sol": {
+      "lastModificationDate": 1670434591990,
+      "contentHash": "4c24d958cf49846da9fd36a99d81f9fc",
+      "sourceName": "@uniswap/v2-core/contracts/UniswapV2ERC20.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IUniswapV2ERC20.sol",
+        "./libraries/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "=0.5.16"
+      ],
+      "artifacts": [
+        "UniswapV2ERC20"
+      ]
+    },
+    "C:\\Users\\Maty_\\Desktop\\proyectos\\uniswapRockRugPool\\uniswapDexUSDCETH\\node_modules\\@uniswap\\v2-core\\contracts\\libraries\\Math.sol": {
+      "lastModificationDate": 1670434591987,
+      "contentHash": "bee6c1959728d5d42c14151076cebd83",
+      "sourceName": "@uniswap/v2-core/contracts/libraries/Math.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "=0.5.16"
+      ],
+      "artifacts": [
+        "Math"
+      ]
+    },
+    "C:\\Users\\Maty_\\Desktop\\proyectos\\uniswapRockRugPool\\uniswapDexUSDCETH\\node_modules\\@uniswap\\v2-core\\contracts\\libraries\\UQ112x112.sol": {
+      "lastModificationDate": 1670434591993,
+      "contentHash": "2a703244e9f645c6fb297a983ce7c9c4",
+      "sourceName": "@uniswap/v2-core/contracts/libraries/UQ112x112.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "=0.5.16"
+      ],
+      "artifacts": [
+        "UQ112x112"
+      ]
+    },
+    "C:\\Users\\Maty_\\Desktop\\proyectos\\uniswapRockRugPool\\uniswapDexUSDCETH\\node_modules\\@uniswap\\v2-core\\contracts\\interfaces\\IUniswapV2Callee.sol": {
+      "lastModificationDate": 1670434591983,
+      "contentHash": "30a4aed15b3fa3ce5588118b7cecfa7f",
+      "sourceName": "@uniswap/v2-core/contracts/interfaces/IUniswapV2Callee.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IUniswapV2Callee"
+      ]
+    },
+    "C:\\Users\\Maty_\\Desktop\\proyectos\\uniswapRockRugPool\\uniswapDexUSDCETH\\node_modules\\@uniswap\\v2-core\\contracts\\interfaces\\IERC20.sol": {
+      "lastModificationDate": 1670434591982,
+      "contentHash": "3d2b948a9266ee66b6e739de97c7e6e9",
+      "sourceName": "@uniswap/v2-core/contracts/interfaces/IERC20.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "C:\\Users\\Maty_\\Desktop\\proyectos\\uniswapRockRugPool\\uniswapDexUSDCETH\\node_modules\\@uniswap\\v2-core\\contracts\\interfaces\\IUniswapV2ERC20.sol": {
+      "lastModificationDate": 1670434591984,
+      "contentHash": "752c725168e1a5b73a8209897f18c5b9",
+      "sourceName": "@uniswap/v2-core/contracts/interfaces/IUniswapV2ERC20.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IUniswapV2ERC20"
+      ]
+    },
+    "C:\\Users\\Maty_\\Desktop\\proyectos\\uniswapRockRugPool\\uniswapDexUSDCETH\\node_modules\\@uniswap\\v2-core\\contracts\\libraries\\SafeMath.sol": {
+      "lastModificationDate": 1670434591988,
+      "contentHash": "a65356c329efeffba75210664f5df3cd",
+      "sourceName": "@uniswap/v2-core/contracts/libraries/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "=0.5.16"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "C:\\Users\\Maty_\\Desktop\\proyectos\\uniswapRockRugPool\\uniswapDexUSDCETH\\contracts\\Factory.sol": {
+      "lastModificationDate": 1671025357301,
+      "contentHash": "250ddd5bef559fc66e7f447bb71bb4c0",
+      "sourceName": "contracts/Factory.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@uniswap/v2-core/contracts/UniswapV2Pair.sol",
+        "@uniswap/v2-core/contracts/UniswapV2Factory.sol"
+      ],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "FactoryMock"
+      ]
+    }
+  }
+}

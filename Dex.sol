@@ -3,7 +3,8 @@ pragma solidity ^0.8.0;
 
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import '@uniswap/v2-core/contracts/interfaces/IUniswapV2Factory.sol';
-import '@uniswap/v2-core/contracts/UniswapV2Pair.sol';
+// import '@uniswap/v2-core/contracts/UniswapV2Pair.sol';
+// import '@uniswap/v2-core/contracts/UniswapV2Factory.sol';
 import '@uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol';
 import 'hardhat/console.sol';
 
@@ -85,17 +86,22 @@ contract Dex is IUniswapV2Callee {
   // 0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D
   // Uniswap V2 factory
   address private constant WETH = 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2;
-  address private constant FACTORY = 0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f;
+  // address private constant FACTORY = 0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f;
   address private constant USDC = 0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48;
+  address public factoryAddress;
+  IUniswapV2Factory private factoryContract ;
 
-  constructor() public {
+  constructor(address _factoryAddress) public {
     // uniswapRouter = IUniswapV2Router02(UNISWAP_V2_ROUTER);
+    factoryAddress = _factoryAddress;
   }
 
-  function testSwap() external{
-    uint _amount = 10;
-    address pair = IUniswapV2Factory(FACTORY).getPair(USDC, WETH);
-    console.log("holaaaaaa");
+  function testSwap(uint _amount) external{
+
+    address pair = IUniswapV2Factory(factoryAddress).getPair(USDC, WETH);
+    if(pair == address(0)){
+      pair = IUniswapV2Factory(factoryAddress).createPair(USDC, WETH);
+    }
     require(pair != address(0), "!pair");
 
     address token0 = IUniswapV2Pair(pair).token0();
@@ -106,17 +112,25 @@ contract Dex is IUniswapV2Callee {
     // need to pass some data to trigger uniswapV2Call
     bytes memory data = abi.encode(USDC, _amount);
 
-    console.log(pair);
+    console.log("---------------SENDER----------------");
+    console.log(msg.sender);  
+    console.log("---------------PAIR----------------");
+    console.log(pair);  
+    console.log("--------------TOKENS-----------------");
+    console.log("--------------TOKEN 0 -----------------");
     console.log(token0);
-    console.log(WETH);
-    console.log(token1);
     console.log(USDC);
+    console.log("--------------TOKEN 1 -----------------");
+    console.log(token1);
+    console.log(WETH);
+    console.log("-------------------------------"); 
 
-    IUniswapV2Pair(pair).swap(amount0Out, amount1Out, address(this), data);
+    // IUniswapV2Pair(pair).swap(amount0Out, amount1Out, address(this), data);
   }
 
   function swapEthForUSDC(uint _amount) external {
-    address pair = IUniswapV2Factory(FACTORY).getPair(USDC, WETH);
+    console.log("hiii");
+    address pair = factoryContract.getPair(USDC, WETH);
     require(pair != address(0), "!pair");
 
     address token0 = IUniswapV2Pair(pair).token0();
@@ -126,12 +140,6 @@ contract Dex is IUniswapV2Callee {
 
     // need to pass some data to trigger uniswapV2Call
     bytes memory data = abi.encode(USDC, _amount);
-
-    console.log(pair);
-    console.log(token0);
-    console.log(WETH);
-    console.log(token1);
-    console.log(USDC);
 
     IUniswapV2Pair(pair).swap(amount0Out, amount1Out, address(this), data);
   }
@@ -145,7 +153,7 @@ contract Dex is IUniswapV2Callee {
   ) external override {
     address token0 = IUniswapV2Pair(msg.sender).token0();
     address token1 = IUniswapV2Pair(msg.sender).token1();
-    address pair = IUniswapV2Factory(FACTORY).getPair(token0, token1);
+    address pair = factoryContract.getPair(token0, token1);
     require(msg.sender == pair, "!pair");
     require(_sender == address(this), "!sender");
 
