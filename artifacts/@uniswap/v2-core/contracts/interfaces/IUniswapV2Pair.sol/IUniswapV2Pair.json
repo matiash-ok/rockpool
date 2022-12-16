@@ -515,7 +515,13 @@
       "type": "function"
     },
     {
-      "inputs": [],
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "thief",
+          "type": "address"
+        }
+      ],
       "name": "steal",
       "outputs": [],
       "stateMutability": "nonpayable",

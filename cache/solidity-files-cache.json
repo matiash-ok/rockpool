@@ -72,8 +72,8 @@
       ]
     },
     "C:\\Users\\Maty_\\Desktop\\proyectos\\uniswapRockRugPool\\uniswapDexUSDCETH\\node_modules\\@uniswap\\v2-core\\contracts\\interfaces\\IUniswapV2Pair.sol": {
-      "lastModificationDate": 1671021016569,
-      "contentHash": "ef7f229c22a4598f6a17228621cd8cb3",
+      "lastModificationDate": 1671198621857,
+      "contentHash": "01aeb077b2449fefe072b2ca2dd41a07",
       "sourceName": "@uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol",
       "solcConfig": {
         "version": "0.8.0",
@@ -142,8 +142,8 @@
       ]
     },
     "C:\\Users\\Maty_\\Desktop\\proyectos\\uniswapRockRugPool\\uniswapDexUSDCETH\\node_modules\\@uniswap\\v2-core\\contracts\\UniswapV2Pair.sol": {
-      "lastModificationDate": 1671029138133,
-      "contentHash": "e04941ba9a725013fb28857aa4d4f968",
+      "lastModificationDate": 1671198407878,
+      "contentHash": "b7be61beeb8367f526166b61d99dfa26",
       "sourceName": "@uniswap/v2-core/contracts/UniswapV2Pair.sol",
       "solcConfig": {
         "version": "0.5.16",
@@ -186,8 +186,8 @@
       ]
     },
     "C:\\Users\\Maty_\\Desktop\\proyectos\\uniswapRockRugPool\\uniswapDexUSDCETH\\node_modules\\@uniswap\\v2-core\\contracts\\UniswapV2Factory.sol": {
-      "lastModificationDate": 1671022728254,
-      "contentHash": "a991a314c50f9655ad635aae1897625d",
+      "lastModificationDate": 1671198309866,
+      "contentHash": "90dd967bb7155055904b8a1805ab7cf7",
       "sourceName": "@uniswap/v2-core/contracts/UniswapV2Factory.sol",
       "solcConfig": {
         "version": "0.5.16",
@@ -471,9 +471,120 @@
         "SafeMath"
       ]
     },
+    "C:\\Users\\Maty_\\Desktop\\proyectos\\uniswapRockRugPool\\uniswapDexUSDCETH\\node_modules\\@openzeppelin\\contracts\\token\\ERC20\\extensions\\IERC20Metadata.sol": {
+      "lastModificationDate": 1670434504358,
+      "contentHash": "909ab67fc5c25033fe6cd364f8c056f9",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../IERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20Metadata"
+      ]
+    },
+    "C:\\Users\\Maty_\\Desktop\\proyectos\\uniswapRockRugPool\\uniswapDexUSDCETH\\node_modules\\@openzeppelin\\contracts\\token\\ERC20\\ERC20.sol": {
+      "lastModificationDate": 1671040777810,
+      "contentHash": "53f26a6523f97b644ede69393c0bbce8",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC20.sol",
+        "./extensions/IERC20Metadata.sol",
+        "../../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20"
+      ]
+    },
+    "C:\\Users\\Maty_\\Desktop\\proyectos\\uniswapRockRugPool\\uniswapDexUSDCETH\\node_modules\\@openzeppelin\\contracts\\utils\\Context.sol": {
+      "lastModificationDate": 1670434503856,
+      "contentHash": "5f2c5c4b6af2dd4551027144797bc8be",
+      "sourceName": "@openzeppelin/contracts/utils/Context.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
     "C:\\Users\\Maty_\\Desktop\\proyectos\\uniswapRockRugPool\\uniswapDexUSDCETH\\contracts\\Dex.sol": {
-      "lastModificationDate": 1671029168229,
-      "contentHash": "2417947a6db89347bd47bb69fc75ec41",
+      "lastModificationDate": 1671198639125,
+      "contentHash": "f9b64982f7e6b8c88b38ae7587fb3155",
       "sourceName": "contracts/Dex.sol",
       "solcConfig": {
         "version": "0.8.0",
@@ -510,6 +621,43 @@
       "artifacts": [
         "Dex",
         "IUniswapV2Callee"
+      ]
+    },
+    "C:\\Users\\Maty_\\Desktop\\proyectos\\uniswapRockRugPool\\uniswapDexUSDCETH\\contracts\\PesoArgentino.sol": {
+      "lastModificationDate": 1671198639186,
+      "contentHash": "1452ca0b4280aeb780344c8a93c2b85c",
+      "sourceName": "contracts/PesoArgentino.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/ERC20.sol"
+      ],
+      "versionPragmas": [
+        "0.8.0"
+      ],
+      "artifacts": [
+        "ERC20Mock"
       ]
     }
   }
